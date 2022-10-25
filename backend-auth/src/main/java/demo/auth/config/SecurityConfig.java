@@ -115,12 +115,11 @@ public class SecurityConfig {
 				.authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
 				.authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
 				.authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
-				.redirectUri(redirectUrl + "/login/oauth2/code/messaging-client-oidc")
+//				.redirectUri(redirectUrl + "/login/oauth2/code/messaging-client-oidc")
 				.redirectUri(redirectUrl + "/authorized")
 				.scope(OidcScopes.OPENID)
-				.scope(OidcScopes.PROFILE)
-				.scope("message.read")
-				.scope("message.write")
+//				.scope("message.read")
+//				.scope("message.write")
 //				.clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
 				.build();
 
